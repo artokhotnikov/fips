@@ -194,6 +194,10 @@ select {
   line-height: 32px;
   letter-spacing: 0.035em;
   color: rgba(0, 0, 0, 0.5);
+  &:focus,
+  &:active {
+    border: 1px solid #1A9BF9;
+  }
 }
 
 select {

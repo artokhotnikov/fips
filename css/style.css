@@ -988,6 +988,12 @@ select {
   color: rgba(0, 0, 0, 0.5);
 }
 
+input:focus, input:active,
+select:focus,
+select:active {
+  border: 1px solid #1A9BF9;
+}
+
 select {
   -webkit-appearance: none;
   font-style: italic;

@@ -17,24 +17,23 @@
     <div class="main-doc__title title">Заполните поля</div>
     <a href="index.html" class="btn-outline">На главную</a>
     <form action="#" type="POST" class="form">
-      <!-- <div class="form__error">Текст ошибки</div> -->
       <div name="lastname" class="form__line">
-        <label> Фамилия</label>
+        <label class="required"> Фамилия</label>
         <input type="text" placeholder="Иванов">
         <!-- <div class="form__error">Текст ошибки</div> -->
       </div> 
       <div name="name" class="form__line">
-        <label>Имя</label>
+        <label class="required">Имя</label>
         <input type="text" placeholder="Иван">
         <!-- <div class="form__error">Текст ошибки</div> -->
       </div>
       <div name="surname" class="form__line">
-        <label>Отчество</label>
+        <label class="required">Отчество</label>
         <input type="text" placeholder="Иванович">
         <!-- <div class="form__error">Текст ошибки</div> -->
       </div>
       <div class="form__line select">
-        <label>Тип документа</label>
+        <label class="required">Тип документа</label>
         <select name="type" id="">
           <option value="1">Заявление</option>
           <option value="1">Явление</option>
@@ -44,7 +43,7 @@
         <!-- <div class="form__error">Текст ошибки</div> -->
       </div>
       <div class="form__line">
-        <label>Прочие данные</label>
+        <label class="required">Прочие данные</label>
         <input name="text" type="text" placeholder="Прочие данные">
         <!-- <div class="form__error">Текст ошибки</div> -->
       </div>

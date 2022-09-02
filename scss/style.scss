@@ -137,7 +137,6 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    border: 1px solid red;
     color: red;
     font-size: 26px;
     line-height: 121.99%;
@@ -146,6 +145,11 @@ body {
     margin-left: auto;
     margin-top: 10px;
     border-radius: 8px;
+    ul {
+      li + li {
+        margin-top: 12px;
+      }
+    }
   }
 
   .btn {
@@ -160,8 +164,20 @@ label {
   letter-spacing: 0.035em;
   color: #105B92;
   margin-bottom: 26px;
-  display: block;
+  display: inline-block;
+  padding-right: 8px;
   text-align: left;
+  position: relative;
+  &.required { 
+    &::after{
+      content:'*';
+      color: red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 18px;
+    }
+  }
 }
 
 input,
@@ -316,63 +332,6 @@ select {
   .btn {
     width: 660px;
     margin: 0 auto;
-  }
-}
-
-.keyboard {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 120px 200px;
-
-
-  &__view {
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    width: 900px;
-    height: 80px;
-    padding: 0 46px;
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: 0.035em;
-    color: rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-  }
-
-  &__btns {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-  }
-
-  &__line {
-    display: flex;
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  &__btn {
-    font-size: 26px;
-    height: 90px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    transition: all 0.3s ease 0s;
-
-    &.active {
-      background: rgb(165, 186, 255);
-    }
   }
 }
 

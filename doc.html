@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Прием документов</title>
+</head>
+
+<body>
+  <main class="main-doc">
+    <div class="logo">
+      <img src="img/logo.svg" alt="">
+    </div>
+    <div class="main-doc__title title">Заполните поля</div>
+    <a href="index.html" class="btn-outline">На главную</a>
+    <form action="#" type="POST" class="form">
+      <!-- <div class="form__error">Текст ошибки</div> -->
+      <div name="lastname" class="form__line">
+        <label> Фамилия</label>
+        <input type="text" placeholder="Иванов">
+        <!-- <div class="form__error">Текст ошибки</div> -->
+      </div> 
+      <div name="name" class="form__line">
+        <label>Имя</label>
+        <input type="text" placeholder="Иван">
+        <!-- <div class="form__error">Текст ошибки</div> -->
+      </div>
+      <div name="surname" class="form__line">
+        <label>Отчество</label>
+        <input type="text" placeholder="Иванович">
+        <!-- <div class="form__error">Текст ошибки</div> -->
+      </div>
+      <div class="form__line select">
+        <label>Тип документа</label>
+        <select name="type" id="">
+          <option value="1">Заявление</option>
+          <option value="1">Явление</option>
+          <option value="1">Ление</option>
+          <option value="1">Ие</option>
+        </select>
+        <!-- <div class="form__error">Текст ошибки</div> -->
+      </div>
+      <div class="form__line">
+        <label>Прочие данные</label>
+        <input name="text" type="text" placeholder="Прочие данные">
+        <!-- <div class="form__error">Текст ошибки</div> -->
+      </div>
+
+      <button type="submit" class="btn register">Зарегистрировать документы</button>
+    </form>
+
+  </main>
+
+  <script src="js/kioskborad.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
